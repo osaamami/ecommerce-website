@@ -1,0 +1,142 @@
+.stories {
+  .heading-secondary {
+    font-size: 6.4rem;
+    font-weight: 600;
+
+    @include respond(phone) {
+      font-size: 4.6rem;
+    }
+  }
+
+  &__card1 {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+
+    @include respond(tab-pot) {
+      flex-direction: column;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    &-pic {
+      width: 80%;
+
+      @include respond(tab-pot) {
+        display: none;
+      }
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    &-contennt {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      border-top: 2px solid $color-black;
+      border-bottom: 2px solid $color-black;
+      border-left: 0;
+      border-right: 2px solid $color-black;
+      padding: 6rem 3rem;
+
+      @include respond(phone) {
+        border-top: 0;
+        border-bottom: 2px solid $color-black;
+        border-right: 2px solid $color-black;
+        border-left: 2px solid $color-black;
+      }
+    }
+
+    &-heading {
+      font-size: 2.8rem;
+      width: 80%;
+      font-weight: 400;
+      color: $dark-color2;
+    }
+
+    &-prg {
+      font-size: 1.6rem;
+      width: 75%;
+      line-height: 1.4;
+    }
+
+    &-date {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-text {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__card2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 4rem;
+
+    @include respond(tab-pot) {
+      flex-direction: column;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    &-pic {
+      width: 80%;
+
+      @include respond(tab-pot) {
+        display: none;
+      }
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    &-contennt2 {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      border-top: 2px solid $color-black;
+      border-bottom: 2px solid $color-black;
+      border-right: 0;
+      border-left: 2px solid $color-black;
+      padding: 6rem 3rem;
+      @include respond(phone) {
+        border-top: 0;
+        border-bottom: 2px solid $color-black;
+        border-right: 2px solid $color-black;
+        border-left: 2px solid $color-black;
+      }
+    }
+
+    &-heading {
+      font-size: 2.8rem;
+      width: 65%;
+      font-weight: 400;
+      color: $dark-color2;
+    }
+
+    &-prg {
+      font-size: 1.6rem;
+      width: 70%;
+      line-height: 1.4;
+    }
+
+    &-date {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-text {
+      font-size: 1.3rem;
+    }
+  }
+}

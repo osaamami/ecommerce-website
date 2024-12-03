@@ -1,0 +1,9 @@
+.logo-brands {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  &__brnd {
+    width: 15%;
+  }
+}

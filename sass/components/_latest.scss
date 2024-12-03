@@ -1,0 +1,40 @@
+.latest {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    // gap: 43rem;
+    margin-bottom: 4rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+
+  &__heading-secondary {
+    font-size: 4.4rem;
+    font-weight: 600;
+    color: $dark-color2;
+  }
+
+  &__parga {
+    font-size: 1.7rem;
+    font-weight: 400;
+    width: 38%;
+
+    @include respond(phone) {
+      width: 75%;
+    }
+  }
+
+  &__imges {
+    display: flex;
+    justify-content: space-between;
+    // gap: 2.5rem;
+
+    @include respond(tab-pot) {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+}

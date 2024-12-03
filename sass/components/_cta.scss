@@ -1,0 +1,67 @@
+.CTA {
+  height: 70vh;
+  background-color: $color-light1;
+  padding: 8rem;
+  position: relative;
+  &__photo {
+    position: absolute;
+    top: 26%;
+    left: 55%;
+
+    @include respond(tab-pot) {
+      top: 16%;
+    }
+
+    @include respond(phone) {
+      top: 35%;
+    }
+
+    img {
+      width: 70%;
+    }
+  }
+
+  &__card {
+    width: 50%;
+    background-color: $color-white;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+    @include respond(tab-pot) {
+      width: 45%;
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      padding: 2rem;
+    }
+
+    @include respond(phone) {
+      width: 45%;
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      padding: 2rem;
+    }
+
+    &-heading {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+
+    &-heading2 {
+      font-size: 5rem;
+      font-weight: 600;
+      @include respond(phone) {
+        font-size: 3rem;
+      }
+    }
+
+    &-prag {
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+  }
+}

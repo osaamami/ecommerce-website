@@ -1,0 +1,181 @@
+.footer {
+  margin-top: 10rem;
+  padding: 2rem 6rem;
+  background-color: $primary-color;
+  @include respond(phone) {
+    padding: 7.5rem 3rem;
+  }
+}
+
+.container {
+  @include respond(phone) {
+  }
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 3rem;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.copyright {
+  font-size: 1.2rem;
+  text-align: center;
+  color: $color-white;
+
+  @include respond(phone) {
+    margin-top: 10rem;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+}
+
+.logo-box {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: $color-white;
+}
+
+.info {
+  &__email {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $color-white;
+
+    &-line {
+      width: 60%;
+      color: $color-white;
+      margin: 0;
+      margin-top: 1rem;
+      height: 1px;
+      background-color: $color-white;
+      border: none;
+    }
+  }
+
+  &__phone {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $color-white;
+    &-line {
+      width: 60%;
+      color: $color-white;
+      margin: 0;
+      margin-top: 1rem;
+      border: none;
+      height: 1px;
+      background-color: $color-white;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+
+    &-icn {
+      font-size: 1.8rem;
+      color: $color-white;
+    }
+  }
+}
+
+.one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 2rem;
+  }
+
+  &__lnks {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__head4 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: $color-white;
+  }
+
+  &__items {
+    list-style: none;
+  }
+
+  &__lnk {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $color-white;
+  }
+}
+
+.help {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 2rem;
+  }
+
+  &__lnks {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__head4 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: $color-white;
+  }
+
+  &__items {
+    list-style: none;
+  }
+  &__lnk {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $color-white;
+  }
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: $color-white;
+  margin: 4rem 0;
+}
